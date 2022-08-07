@@ -8,6 +8,7 @@
     tools:context=".MainActivity"
     >
 
+
     <EditText
         android:id="@+id/input_escolha"
         android:layout_width="wrap_content"
@@ -15,12 +16,12 @@
         android:ems="12"
         android:inputType="number"
         android:hint="@string/escolha_um_n_mero_0_a_10"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="90dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/error_messagen"

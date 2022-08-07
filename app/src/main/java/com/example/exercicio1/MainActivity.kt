@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         val errorMessagen = findViewById<TextView>(R.id.error_messagen)
         val texto = findViewById<TextView>(R.id.txt_sorteio)
         val inputEscolha = findViewById<TextView>(R.id.input_escolha)
-        val textInputEscolha = inputEscolha.text.toString()
+        var textInputEscolha = inputEscolha.text.toString()
         var isFlag = true
 
         inputEscolha.addTextChangedListener(object : TextWatcher {
@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             override fun onTextChanged(digitado: CharSequence, start: Int, before: Int, count: Int) {
 
                 val stringDigitado = digitado.toString()
+                textInputEscolha = stringDigitado
 
                 if (stringDigitado.isNotBlank()) {
                     val intDigitado = stringDigitado.toInt()
@@ -61,7 +62,7 @@ class MainActivity : AppCompatActivity() {
                 if (textInputEscolha.isNotBlank() && textInputEscolha == numeroSorteado.toString()) {
                     texto.text = "Parabéns! Você acertou!"
                 } else {
-                    texto.text = "Não foi dessa vez!!! Tente novamente!!!"
+                    texto.text = "Número sorteado: $numeroSorteado número digitado: $textInputEscolha \nNão foi dessa vez!!! Tente novamente!!!"
                 }
             } else {
                 texto.text = "somente valores entre 0 e 10"
