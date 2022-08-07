@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Roleta da sorte</string>
+    <string name="escolha_um_n_mero_0_a_10">Escolha um numero de 0 a 10</string>
+    <string name="rodar">rodar</string>
+    <string name="nenhum_n_mero_selecionado">Nenhum numero selecionado</string>
+    <string name="somente_valores_validos">somente numeros de 0 a 10</string>
+
+</resources>
