@@ -23,12 +23,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        /*
+        * Demostração de como recuperar valores da tela
+        * utilizando o findViewById
+        *
+        * */
+
         val btnRodarNumero = findViewById<TextView>(R.id.btn_rodar)
         val errorMessagen = findViewById<TextView>(R.id.error_messagen)
         val texto = findViewById<TextView>(R.id.txt_sorteio)
         val inputEscolha = findViewById<TextView>(R.id.input_escolha)
         var textInputEscolha = inputEscolha.text.toString()
         var isFlag = true
+
+        /*
+        * utilizei o addTextChangedListener
+        * para recuperar o valor no momento em que o usuário digita o numeor
+        * nesse momento verifico se o valor está dentro de 0 a 10
+        * */
 
         inputEscolha.addTextChangedListener(object : TextWatcher {
 
