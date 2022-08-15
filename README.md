@@ -12,8 +12,9 @@ Sera solicitado um número entre 0 e 10, onde vamos verificar se esse mesmo núm
 
 | Telas | Telas     | Telas     |
 | ------------- | ------------- | ------------- |
-|![6](img_readme/tela6.png)|![2](img_readme/tela2.png)|![3](img_readme/tela3.png)|
-|![4](img_readme/tela4.png)|![5](img_readme/tela5.png)|![1](img_readme/tela1.png)|
+|![6](img_readme/tela0.png)|![2](img_readme/tela6.png)|![3](img_readme/tela5.png)|
+|![4](img_readme/tela1.png)|![5](img_readme/tela2.png)|![1](img_readme/tela3.png)|
+|![4](img_readme/tela4.png)|x|x|
 
 
 # Authors
